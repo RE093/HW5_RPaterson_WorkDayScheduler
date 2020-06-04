@@ -81,7 +81,7 @@ body {
       padding: 20px;
   }
 
-  .timeDate {
-      text-align: center;
-      padding: 20px;
+  .timeDate,
+  .timeDateTwo {
+    text-align: center;
   }
