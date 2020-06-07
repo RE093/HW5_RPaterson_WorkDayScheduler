@@ -85,3 +85,10 @@ body {
   .timeDateTwo {
     text-align: center;
   }
+  .userInput {
+    width: 70%;
+    height: 50px;
+    padding: 20px;
+    background-color: beige;
+    border-color: grey;
+  }
