@@ -31,6 +31,7 @@ $(document).ready(function () {
         var timeText = $("<span>");
         timeText.addClass("input-group-text");
         timeText.text(hours[i]);
+        timeText.attr("value", value[i])
         timeText.css("width", "4.5rem");
 
         var userInput = $("<div>");
@@ -53,10 +54,13 @@ $(document).ready(function () {
         $(".container").append(hourBlocks);
 
         // Changing div color based on current time
-        var time = parseInt(moment().format('HH'))
-        var timeIndex = parseInt(timeText.attr("value"))
+        var time = moment().format('HH')
+        var timeIndex = timeText.attr("value")
 
-        if (time > timeIndex) {
+        console.log(time)
+        console.log(timeIndex)
+
+        if (time > timeText.attr("value")) {
             timeText.css("background-color", "lightgrey")
         }
         if (time === timeIndex) {
